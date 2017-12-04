@@ -13,6 +13,7 @@
 		C403DA731FBF9FF200CB2450 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C403DA721FBF9FF200CB2450 /* HomeVC.swift */; };
 		C4181F661FC0CD8D00D871DC /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4181F641FC0CD8D00D871DC /* PostCell.swift */; };
 		C4181F691FC1027C00D871DC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4181F681FC1027C00D871DC /* RoundedView.swift */; };
+		C42153651FD60B1700FD4CAE /* PlaybackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42153641FD60B1700FD4CAE /* PlaybackVC.swift */; };
 		C4AA46CB1FBDF293003ADED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA46CA1FBDF293003ADED7 /* AppDelegate.swift */; };
 		C4AA46CD1FBDF293003ADED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA46CC1FBDF293003ADED7 /* ViewController.swift */; };
 		C4AA46D01FBDF293003ADED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AA46CE1FBDF293003ADED7 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		C403DA721FBF9FF200CB2450 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C4181F641FC0CD8D00D871DC /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		C4181F681FC1027C00D871DC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		C42153641FD60B1700FD4CAE /* PlaybackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackVC.swift; sourceTree = "<group>"; };
 		C4AA46C71FBDF293003ADED7 /* shredz_workspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shredz_workspace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AA46CA1FBDF293003ADED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4AA46CC1FBDF293003ADED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				C4B331141FC3638100185626 /* RoundedImageView.swift */,
 				C4B331181FC3D55D00185626 /* RoundedButton.swift */,
 				C4B3311A1FC3D74400185626 /* CameraVC.swift */,
+				C42153641FD60B1700FD4CAE /* PlaybackVC.swift */,
 			);
 			path = shredz_workspace;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				C4B331151FC3638100185626 /* RoundedImageView.swift in Sources */,
 				C403DA711FBF940200CB2450 /* File.swift in Sources */,
 				C403DA731FBF9FF200CB2450 /* HomeVC.swift in Sources */,
+				C42153651FD60B1700FD4CAE /* PlaybackVC.swift in Sources */,
 				C4181F691FC1027C00D871DC /* RoundedView.swift in Sources */,
 				C4B331191FC3D55D00185626 /* RoundedButton.swift in Sources */,
 				C403DA6F1FBF93C900CB2450 /* RoundedShadowView.swift in Sources */,

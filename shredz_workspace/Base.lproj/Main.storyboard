@@ -16,61 +16,6 @@
     </customFonts>
     <scenes>
         <!--Item-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="shredz_workspace" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ol-nj-ZIF">
-                                <rect key="frame" x="16" y="637" width="49" height="30"/>
-                                <state key="normal" title="Record"/>
-                                <connections>
-                                    <action selector="recordVideoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8SQ-P5-eJj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ps-Hj-SV2">
-                                <rect key="frame" x="329" y="637" width="30" height="30"/>
-                                <state key="normal" title="Play"/>
-                                <connections>
-                                    <action selector="playVideoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYR-KQ-apg"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yi8-2L-Pxr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="629"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIQ-J9-y8K">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="h6q-zg-KHd"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="yi8-2L-Pxr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DLA-UR-xRO"/>
-                            <constraint firstItem="dIQ-J9-y8K" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HHb-CC-usS"/>
-                            <constraint firstItem="9Ol-nj-ZIF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WQR-TC-7Sf"/>
-                            <constraint firstItem="9Ol-nj-ZIF" firstAttribute="top" secondItem="yi8-2L-Pxr" secondAttribute="bottom" constant="8" id="buX-Un-Zpg"/>
-                            <constraint firstItem="yi8-2L-Pxr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fTD-SZ-xqy"/>
-                            <constraint firstItem="yi8-2L-Pxr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g67-zs-cgb"/>
-                            <constraint firstItem="9Ol-nj-ZIF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lUQ-27-yOc"/>
-                            <constraint firstItem="dIQ-J9-y8K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lY0-ei-l8S"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Ps-Hj-SV2" secondAttribute="trailing" constant="16" id="qDO-Mg-68d"/>
-                            <constraint firstItem="5Ps-Hj-SV2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="upZ-Jh-ZlS"/>
-                            <constraint firstItem="dIQ-J9-y8K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zVL-9t-pTd"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="3Kt-oK-kTY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2236" y="-613"/>
-        </scene>
-        <!--Item-->
         <scene sceneID="vYD-Rk-7CU">
             <objects>
                 <viewController id="X6E-iZ-DoV" customClass="HomeVC" customModule="shredz_workspace" customModuleProvider="target" sceneMemberID="viewController">
@@ -247,12 +192,42 @@
                     <tabBarItem key="tabBarItem" title="Item" id="CdO-Kh-6YF"/>
                     <connections>
                         <outlet property="camPreview" destination="Hzy-1V-afd" id="e44-xn-CuD"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showVideoSegue" id="595-FJ-1Ne"/>
+                        <segue destination="fmK-BI-1xL" kind="show" identifier="showVideo" id="SDA-ng-diG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgL-dU-eZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1417" y="-613"/>
+        </scene>
+        <!--PlaybackVC-->
+        <scene sceneID="RSi-B3-EfW">
+            <objects>
+                <viewController id="fmK-BI-1xL" customClass="PlaybackVC" customModule="shredz_workspace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uF1-jO-dah">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKW-xY-QTZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YKW-xY-QTZ" firstAttribute="top" secondItem="uF1-jO-dah" secondAttribute="top" id="DkK-b1-TwO"/>
+                            <constraint firstItem="YKW-xY-QTZ" firstAttribute="trailing" secondItem="oKU-Jt-Qlm" secondAttribute="trailing" id="GD0-2n-EZh"/>
+                            <constraint firstItem="YKW-xY-QTZ" firstAttribute="leading" secondItem="oKU-Jt-Qlm" secondAttribute="leading" id="QjP-8T-jnn"/>
+                            <constraint firstItem="oKU-Jt-Qlm" firstAttribute="bottom" secondItem="YKW-xY-QTZ" secondAttribute="bottom" constant="100" id="djL-rG-xny"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oKU-Jt-Qlm"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="YKW-xY-QTZ" id="KAR-ET-kMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPD-h2-ywt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2265" y="-613"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="21D-NC-NRX">
