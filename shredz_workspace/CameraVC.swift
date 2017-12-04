@@ -242,6 +242,5 @@ extension CameraVC: AVCaptureFileOutputRecordingDelegate {
         }
         outputURL = nil
     }
-    
 }
 
