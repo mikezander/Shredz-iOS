@@ -63,7 +63,6 @@ class PostCell: UICollectionViewCell, UITableViewDelegate, UITableViewDataSource
         videoView.layer.addSublayer(playerLayer!)
     }
 
-
     func initNewPlayerItem() {
 
             self.localPlayer.removeAllItems()
