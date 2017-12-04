@@ -46,7 +46,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "postCell", for: indexPath) as! PostCell
 
 
-        cell.videoUrl = URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4") //getUrlFromCameraRoll()
+        cell.videoUrl = getUrlFromCameraRoll()
         
 
         return cell
@@ -56,18 +56,19 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "postCell", for: indexPath) as! PostCell
 
-       // if let cells = postCollectionView.visibleCells as? [PostCell] {
-            //for cell in cells {
-                //cell.playVideo()
-           // }
-       // }
+        if let cells = postCollectionView.visibleCells as? [PostCell] {
+            for cell in cells {
+                cell.playVideo()
+            }
+        }
         
 
     }
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-       // if let cell = cell as? PostCell {
-       //     cell.localPlayer.pause()
-       // }
+        if let cell = cell as? PostCell {
+            cell.localPlayer.pause()
+           
+        }
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {

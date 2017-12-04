@@ -59,7 +59,7 @@ class PostCell: UICollectionViewCell, UITableViewDelegate, UITableViewDataSource
         self.playerLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
         self.playerLayer?.player = self.localPlayer
         videoView.layoutIfNeeded()
-        self.playerLayer?.frame = videoView.bounds
+        self.playerLayer?.frame = videoView.frame
         videoView.layer.addSublayer(playerLayer!)
     }
 
